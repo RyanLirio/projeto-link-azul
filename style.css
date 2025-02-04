@@ -1,0 +1,149 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding-top: 80px; /* Espaço para a barra de navegação fixa */
+  }
+  
+  /* Barra de Navegação */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0277bd;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Altura fixa para a barra de navegação */
+  }
+  
+  .navbar .logo img {
+    width: 220px;  /* Largura desejada */
+    height: auto; /* Altura automática para manter proporção */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaço entre os links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffeb3b;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 30px; /* Ícone maior */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px; /* Padding interno do conteúdo principal */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    background: white;
+    padding: 30px; /* Padding interno maior */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Espaçamento entre seções */
+  }
+  
+  .download-button {
+    display: inline-block;
+    padding: 15px 30px; /* Botão maior */
+    background: #0277bd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 18px; /* Tamanho da fonte do botão */
+  }
+  
+  .download-button:hover {
+    background: #01579b;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px; /* Espaço entre ícones */
+  }
+  
+  .social-icons a img {
+    transition: transform 0.3s ease;
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px; /* Padding maior para o rodapé */
+    background: #0277bd;
+    color: white;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px; /* Altura menor para telas pequenas */
+    }
+  
+    .navbar {
+      height: 70px; /* Altura menor para telas pequenas */
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #0277bd;
+      position: absolute;
+      top: 70px; /* Alinhado com a altura da barra de navegação */
+      right: 0;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+
