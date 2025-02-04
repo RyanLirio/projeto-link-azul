@@ -11,6 +11,7 @@
     color: #2c3e50;
     line-height: 1.6;
     padding-top: 80px; /* Espaço para a barra de navegação fixa */
+
   }
   
   /* Barra de Navegação */
@@ -21,6 +22,7 @@
     background: #0277bd;
     color: white;
     padding: 15px 20px;
+    padding-right: 5%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,6 +68,7 @@
   main {
     padding: 20px; /* Padding interno do conteúdo principal */
     max-width: 1200px;
+    min-height: 75vh;
     margin: 0 auto;
   }
   
